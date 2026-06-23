@@ -1,0 +1,16 @@
+{
+  "expected_total_students": 35000,
+  "students_loaded": 35000,
+  "coverage_pct": 100.0,
+  "shortfall": 0,
+  "surplus": 0,
+  "note": "This count reflects sg:Student nodes present in the upstream G1_knowledge_graph.ttl at the moment it was built; this recommender and the merged Stage A+B+C pipeline only EXTEND/score students already present and cannot fabricate additional records with legitimate provenance. If full coverage is required, regenerate the base graph from the upstream student-construction process.",
+  "detection_category_counts": {
+    "VISIBLE_STRUGGLER": 18693,
+    "VISIBLE_THRIVER": 8531,
+    "NEUTRAL_REST": 6586,
+    "SILENT_STRUGGLER": 1018,
+    "SILENT_THRIVER": 172
+  },
+  "academic_year_warnings": 2
+}

@@ -1,0 +1,28 @@
+stage,dataset,n_records,note
+S0_student_count,sg:Student nodes loaded,35000,"expected 35,000"
+S0_attempt_count,sg:ModuleAttempt nodes loaded,186463,
+S1_programmes,sg:Programme nodes,55,
+S1_departments,sg:Department nodes,17,
+S1_faculties,sg:Faculty nodes,5,
+S1_student_table,rows in student_df,35000,
+S1_students_with_department,students with resolved department,35000,"of 35,000 (100.0%)"
+S1_attempt_table,rows in attempt_df,186463,
+S1e_journey_stage,attempts with journey_stage resolved,186463,"of 186,463"
+S2_attempts_with_risk_label,attempts with at_risk computed,186463,"of 186,463"
+S2_module_level_risk_dedup,"distinct (student, module) at-risk rows",169856,"collapsed from 186,463 attempt-level rows (16,607 were repeat attempts at an already-counted module, e.g. resits/repeated years)"
+S2_breadth_table,students with breadth computed,35000,
+S3_struct_edges,structural/journey edges added,291463,
+S3_graph_size,trajectory graph nodes,36815,"edges=291,463"
+S3_walks,random walks generated,368150,
+S3_embeddings,nodes embedded,36815,dim=32
+S3_scored_students,students with a usable embedding,35000,"of 35,000"
+S5_students_dashboard,rows written to students_dashboard.csv,35000,
+S6_strugglers,SILENT_STRUGGLER students (mentee pool),1018,
+S6_thrivers,SILENT_THRIVER students (mentor candidate pool),172,
+S6_peer_matches,candidate match rows written,10180,
+S6_strugglers_with_match,strugglers with >=1 candidate match,1018,"of 1,018"
+S6b_network_edges,mentor-struggler-module edge rows written,12283,
+S7_interventions,students with >=1 recommended intervention,19711,
+S8_department_rollup,department rows written,18,
+S9_fairness_rows,subgroup rows evaluated,25,
+S9_fairness_divergent,rows flagged divergent (>=15pp gap),24,
